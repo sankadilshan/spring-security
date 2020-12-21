@@ -1,0 +1,53 @@
+#GET
+#http://localhost:8081/api/v1/health
+#%%%
+#
+## Duration: 1236 ms
+## URL: http://localhost:8081/api/v1/health
+#
+## HTTP/1.1 200
+#
+#@X-Content-Type-Options: nosniff
+#@X-XSS-Protection: 1; mode=block
+#@Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+#@Pragma: no-cache
+#@Expires: 0
+#@X-Frame-Options: DENY
+#@Content-Type: text/plain;charset=UTF-8
+#@Content-Length: 2
+#@Date: Sun, 20 Dec 2020 16:00:59 GMT
+#@Keep-Alive: timeout=60
+#@Connection: keep-alive
+#
+
+
+POST
+
+http://localhost:8081/login
+@Content-Type: application/jso n
+{
+  "username":"admin",
+  "password":"user"
+}
+
+%%%
+
+# Duration: 1749 ms
+# URL: http://localhost:8081/login
+
+# HTTP/1.1 302
+
+@Set-Cookie: remember-me=; Max-Age=0; Expires=Thu, 01-Jan-1970 00:00:10 GMT; Path=/
+@Set-Cookie: JSESSIONID=31F4B0A0AC3F1B0794020CBDC2AB8878; Path=/; HttpOnly
+@X-Content-Type-Options: nosniff
+@X-XSS-Protection: 1; mode=block
+@Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+@Pragma: no-cache
+@Expires: 0
+@X-Frame-Options: DENY
+@Location: http://localhost:8081/login?error
+@Content-Length: 0
+@Date: Mon, 21 Dec 2020 08:30:44 GMT
+@Keep-Alive: timeout=60
+@Connection: keep-alive
+
