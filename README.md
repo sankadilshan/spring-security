@@ -1,4 +1,4 @@
 # spring-security
-#basic #- #htppBasic
-#form  #- #formLogin
-#auth  #- #AuthenticationManagerBuilder
+# basic - htppBasic
+# form  - formLogin
+# auth  - AuthenticationManagerBuilder
